@@ -1,0 +1,29 @@
+/* /_sass/layout/_paragraphs.scss */
+
+// 基础段落对齐
+p {
+  text-align: justify;
+  text-justify: inter-ideograph; // 中文优化
+  line-height: 1.7;
+  max-width: 65ch;
+  margin: 1.2rem auto;
+  word-break: break-word;
+
+  // 响应式适配
+  @include breakpoint(max-width 768px) { // 使用主题自带的 breakpoint
+    max-width: 100%;
+    padding: 0 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  @include breakpoint(769px 1024px) { // 平板适配
+    max-width: 80ch;
+  }
+}
+
+// 覆盖主题默认样式
+#main p, .post p, .publication p {
+  text-align: justify !important;
+  text-justify: inter-ideograph !important;
+}

@@ -61,6 +61,9 @@ small, .small {
 }
 
 p {
+  // 防止首尾标点溢出
+  hanging-punctuation: allow-end;
+  text-indent: 0.5em;
   margin-bottom: 1.3em;
 }
 
