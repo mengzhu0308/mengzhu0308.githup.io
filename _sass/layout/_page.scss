@@ -110,8 +110,13 @@
   @media (max-width: 767px) {
 	/* 统一段落样式 */
 	p {
-        hyphens: auto;
-        -webkit-hyphens: auto;
+      /* 保持连字符启用 */
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      
+      /* 移动端优化 */
+      hyphenate-limit-chars: 5 2 2; // 更严格的字符限制
     }
 	/* 标题缩小 */
     h2 {

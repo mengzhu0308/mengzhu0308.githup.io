@@ -60,21 +60,39 @@ small, .small {
   font-size: $type-size-6;
 }
 
-p {
-  margin-bottom: 1.3em;
-  text-align: justify;       /* 新增：两端对齐 */
-  hyphens: auto;             /* 连字符换行 */
-  -webkit-hyphens: auto;     /* Safari 兼容 */
-  word-break: break-all;     /* 中文换行优化 /*
-  overflow-wrap: break-word; /* 优先在单词内换行 /*
+// 在 _base.scss 中添加全局设置
+:root {
+  hyphens: auto; // 全局启用（部分现代浏览器需要）
 }
 
-/* 排除不需要对齐的元素 */
-pre, blockquote {
-  p {
-    text-align: left;
-    hyphens: none;
-    -webkit-hyphens: none;
+p {
+  margin-bottom: 1.3em;
+  text-align: justify;
+  
+  /* 连字符核心配置 */
+  hyphens: auto;
+  -webkit-hyphens: auto; // Safari 兼容
+  -moz-hyphens: auto;    // Firefox 兼容
+  
+  /* 换行策略优化 */
+  overflow-wrap: break-word; // 优先保留完整单词
+  word-break: normal;        // 重置中文换行设置
+  
+  /* 语言检测增强 */
+  hyphenate-limit-chars: 6 3 3; // 最小单词长度限制
+  hyphenate-limit-lines: 2;     // 连续连字符行数限制
+}
+
+/* 排除不需要连字符的元素 */
+pre,
+code,
+blockquote,
+kbd,
+samp {
+  p, & {
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    -moz-hyphens: none !important;
   }
 }
 
