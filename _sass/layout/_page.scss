@@ -108,12 +108,12 @@
   
   /* 移动端适配 */
   @media (max-width: 767px) {
-	// 统一段落样式
+	/* 统一段落样式 */
 	p {
         hyphens: auto;
         -webkit-hyphens: auto;
     }
-	// 标题缩小
+	/* 标题缩小 */
     h2 {
         font-size: 1.4rem;
         line-height: 1.3;

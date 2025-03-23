@@ -65,8 +65,8 @@ p {
   text-align: justify;       /* 新增：两端对齐 */
   hyphens: auto;             /* 连字符换行 */
   -webkit-hyphens: auto;     /* Safari 兼容 */
-  word-break: break-all;    /* 中文换行优化 */
-  overflow-wrap: break-word; // 优先在单词内换行
+  word-break: break-all;     /* 中文换行优化 /*
+  overflow-wrap: break-word; /* 优先在单词内换行 /*
 }
 
 /* 排除不需要对齐的元素 */
