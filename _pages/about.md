@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I earned the Ph.D. degree in information management and information systems from Nanchang University, China in 2024, apprenticing under Prof. [Weidong Min](https://smcs.ncu.edu.cn/szdw/jsml/ce79f6f094154067a7dda50292b90603.htm). I earned the M.E. and B.E. degrees in computer science and technology from Nanchang University, China in 2021 and 2018, respectively. My current research interests are basic architectures of AI, learning dynamics of deep neural network models, AI4Science, multimedia forensics and snapshot compressive imaging. He is a Reviewer of *EAAI*.
+**I** earned the Ph.D. degree in information management and information systems from Nanchang University, China in 2024, apprenticing under Prof. [Weidong Min](https://smcs.ncu.edu.cn/szdw/jsml/ce79f6f094154067a7dda50292b90603.htm). I earned the M.E. and B.E. degrees in computer science and technology from Nanchang University, China in 2021 and 2018, respectively. My current research interests are basic architectures of AI, learning dynamics of deep neural network models, AI4Science, multimedia forensics and snapshot compressive imaging. I am a Reviewer of *EAAI*.
 
 # Research Interests
 
