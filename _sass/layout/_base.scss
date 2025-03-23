@@ -60,9 +60,9 @@ small, .small {
   font-size: $type-size-6;
 }
 
-// 在 _base.scss 中添加全局设置
+/* _base.scss 修改后 */
 :root {
-  hyphens: auto; // 全局启用（部分现代浏览器需要）
+  --hyphen-min-length: 8; /* 控制连字符触发阈值 */
 }
 
 p {
@@ -71,28 +71,44 @@ p {
   
   /* 连字符核心配置 */
   hyphens: auto;
-  -webkit-hyphens: auto; // Safari 兼容
-  -moz-hyphens: auto;    // Firefox 兼容
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
   
-  /* 换行策略优化 */
-  overflow-wrap: break-word; // 优先保留完整单词
-  word-break: normal;        // 重置中文换行设置
+  /* 精确控制连字符行为 */
+  hyphenate-limit-chars: var(--hyphen-min-length) 3 2;
+  -webkit-hyphenate-limit-chars: var(--hyphen-min-length) 3 2;
+  hyphenate-limit-lines: 2;
   
-  /* 语言检测增强 */
-  hyphenate-limit-chars: 6 3 3; // 最小单词长度限制
-  hyphenate-limit-lines: 2;     // 连续连字符行数限制
+  /* 优化中英文混排 */
+  word-break: normal;
+  overflow-wrap: break-word;
+  
+  /* 强制连字符样式 */
+  -webkit-hyphenate-character: "\2010"; /* Unicode 连字符 */
+  hyphenate-character: "\2010";
 }
 
-/* 排除不需要连字符的元素 */
+/* 排除元素增强 */
 pre,
 code,
 blockquote,
 kbd,
 samp {
-  p, & {
-    hyphens: none !important;
-    -webkit-hyphens: none !important;
-    -moz-hyphens: none !important;
+  &:not([lang="en"]) { /* 允许特定英文内容保留连字符 */
+    p, & {
+      hyphens: none !important;
+      -webkit-hyphens: none !important;
+      -moz-hyphens: none !important;
+      hyphenate-character: unset !important;
+    }
+  }
+}
+
+/* 中文内容特殊处理 */
+[lang="zh"] {
+  p {
+    hyphens: none;
+    word-break: break-all;
   }
 }
 
