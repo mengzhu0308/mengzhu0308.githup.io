@@ -42,42 +42,42 @@ Educational Background
 
 1. **Meng Zhu**, Weidong Min*, Junwei Han, Qing Han, Shimiao Cui. Improved channel attention methods via hierarchical pooling and reducing information loss. Pattern Recognition, 2024, 148: 1-9. DOI: 10.1016/j.patcog.2023.110148.
 
-   [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0031320323008452) / [GitHup](https://github.com/mengzhu0308/GSACA-MECA) / Bibtex
+   arXiv / [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0031320323008452) / [GitHup](https://github.com/mengzhu0308/GSACA-MECA) / Bibtex
 
 2. **Meng Zhu**, Weidong Min*, Qi Wang, Song Zou, Xinhao Chen. PFLU and FPFLU: Two novel non-monotonic activation functions in convolutional neural networks. Neurocomputing, 2021, 429: 110-117. DOI: 10.1016/j.neucom.2020.11.068.
 
-   [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0925231220318749) / [GitHup](https://github.com/mengzhu0308/PFLU-FPFLU) / Bibtex
+   arXiv / [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0925231220318749) / [GitHup](https://github.com/mengzhu0308/PFLU-FPFLU) / Bibtex
 
 3. **Meng Zhu**, Weidong Min*, Qing Han, Guowei Zhan, Qiyan Fu, Jiahao Li. ShuffleNeMt: Modern lightweight convolutional neural network architecture. Pattern Analysis and Applications, 2024, 27 (4): 123-134. DOI: 10.1007/s10044-024-01327-3.
 
-   [PDF](https://link.springer.com/article/10.1007/s10044-024-01327-3) / [GitHup](https://github.com/mengzhu0308/ShuffleNeMt) / Bibtex
+   arXiv / [PDF](https://link.springer.com/article/10.1007/s10044-024-01327-3) / [GitHup](https://github.com/mengzhu0308/ShuffleNeMt) / Bibtex
 
 5. **朱梦**，闵卫东*，张煜，段静雯. 基于HardSoftmax的并行选择核注意力. 计算机工程与应用，2021，57 (21): 95-101. DOI: 10.3778/j.issn.1002-8331.2010-0085.
 
-   [PDF](http://cea.ceaj.org/CN/10.3778/j.issn.1002-8331.2010-0085?st=alljournals) / [GitHup](https://github.com/mengzhu0308/PSK-Attention) / Bibtex
+   arXiv / [PDF](http://cea.ceaj.org/CN/10.3778/j.issn.1002-8331.2010-0085?st=alljournals) / [GitHup](https://github.com/mengzhu0308/PSK-Attention) / Bibtex
 
 6. **Meng Zhu**, Weidong Min*, Jiahao Li, Mengxue Liu, Ziyang Deng, Yao Zhang. Constructing a smoothed Leaky ReLU using a linear combination of the smoothed ReLU and identity function. Neural Computing and Applications, 2025: 1-14. DOI: 10.1007/s00521-024-10935-3.
 
-   [PDF](https://link.springer.com/article/10.1007/s00521-024-10935-3) / [GitHup](https://github.com/mengzhu0308/LPFLU) / Bibtex
+   arXiv / [PDF](https://link.springer.com/article/10.1007/s00521-024-10935-3) / [GitHup](https://github.com/mengzhu0308/LPFLU) / Bibtex
 
 ### Image Inpainting
 
 1. Hongyue Xiang, Weidong Min*, Qing Han, Cheng Zha, Qian Liu, **Meng Zhu**. Structure-aware multi-view image inpainting using dual consistency attention. Information Fusion, 2024, 104: 1-11. DOI: 10.1016/j.inffus.2023.102174.
 
-   PDF / GitHup / Bibtex
+   arXiv / PDF / GitHup / Bibtex
 
 ### Intelligent Transportation
 
 1. Qi Wang, Weidong Min*, Qing Han, Ziyuan Yang, Xin Xiong, **Meng Zhu**, Haoyu Zhao. Viewpoint adaptation learning with cross-view distance metric for robust vehicle re-identification. Information Sciences, 2021, 564: 71-84. DOI: 10.1016/j.ins.2021.02.013.
 
-   PDF / GitHup / Bibtex
+   arXiv / PDF / GitHup / Bibtex
 
 2. Qiyan Fu, Weidong Min*, Chubbo Li, Haoyu Zhao, Ye Cao, **Meng Zhu**. MSCNet: Dense vehicle counting method based on multi-scale dilated convolution channel-aware deep network. GeoInformatica, 2024, 28 (2): 245-269. DOI: 10.1007/s10707-023-00503-7.
 
-   PDF / GitHup / Bibtex
+   arXiv / PDF / GitHup / Bibtex
 
 ### Ship Detection
 
 1. Cheng Zha, Weidong Min*, Qing Han, Wei Li, Xin Xiong, Qi Wang, **Meng Zhu**. SAR ship localization method with denoising and feature refinement. Engineering Applications of Artificial Intelligence, 2023, 123: 1-13. DOI: 10.1016/j.engappai.2023.106444. 
 
-   PDF / GitHup / Bibtex
+   arXiv / PDF / GitHup / Bibtex
