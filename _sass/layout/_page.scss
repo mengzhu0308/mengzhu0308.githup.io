@@ -107,23 +107,18 @@
   }
   
   /* 移动端适配 */
-	media (max-width: 767px) {
-		// 统一段落样式
-		p {
-			text-align: justify;
-			hyphens: none;
-		}
-
-		// 标题缩小
-		h2 {
-			font-size: 1.4rem;
-		}
-
-		// 列表段落继承 text-align
-		li p {
-			hyphens: none;
-		}
-	}
+  @media (max-width: 767px) {
+	// 统一段落样式
+	p {
+        hyphens: auto;
+        -webkit-hyphens: auto;
+    }
+	// 标题缩小
+    h2 {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+  }
 }
 
 .page__hero {

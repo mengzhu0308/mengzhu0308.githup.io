@@ -65,14 +65,16 @@ p {
   text-align: justify;       /* 新增：两端对齐 */
   hyphens: auto;             /* 连字符换行 */
   -webkit-hyphens: auto;     /* Safari 兼容 */
-  word-break: break-word;    /* 中文换行优化 */
+  word-break: break-all;    /* 中文换行优化 */
+  overflow-wrap: break-word; // 优先在单词内换行
 }
 
 /* 排除不需要对齐的元素 */
 pre, blockquote {
   p {
-    text-align: left !important;
-    hyphens: none !important;
+    text-align: left;
+    hyphens: none;
+    -webkit-hyphens: none;
   }
 }
 
@@ -89,7 +91,8 @@ ul ul, ol ol {
   }
 }
 
-u, ins {
+u, 
+ins {
   text-decoration: none;
   border-bottom: 1px solid var(--global-text-color);
   a {
