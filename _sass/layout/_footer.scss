@@ -38,6 +38,15 @@
     @include breakpoint($x-large) {
       max-width: $x-large;
     }
+	
+	.footer-col {
+		/* 桌面端样式 */
+    
+		@media (max-width: 767px) {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
   }
 
   a {

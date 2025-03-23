@@ -69,15 +69,27 @@ p {
 }
 
 /* 排除不需要对齐的元素 */
-pre, blockquote, ul, ol {
+pre, blockquote {
   p {
     text-align: left !important;
     hyphens: none !important;
   }
 }
 
-u,
-ins {
+/* 新增列表段落规则 */
+li p {
+  text-align: justify !important;
+  hyphens: auto;
+  margin-bottom: 0.8em;
+}
+
+ul ul, ol ol {
+  li p {
+    padding-left: 1.2em;
+  }
+}
+
+u, ins {
   text-decoration: none;
   border-bottom: 1px solid var(--global-text-color);
   a {
@@ -368,3 +380,12 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
       display: none;
     }
   }
+  
+.container {
+  /* 桌面端样式 */
+  
+  @media (max-width: 767px) {
+    padding: 0 15px;
+    width: 100%;
+  }
+}

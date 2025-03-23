@@ -105,6 +105,25 @@
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+  
+  /* 移动端适配 */
+	media (max-width: 767px) {
+		// 统一段落样式
+		p {
+			text-align: justify;
+			hyphens: none;
+		}
+
+		// 标题缩小
+		h2 {
+			font-size: 1.4rem;
+		}
+
+		// 列表段落继承 text-align
+		li p {
+			hyphens: none;
+		}
+	}
 }
 
 .page__hero {
