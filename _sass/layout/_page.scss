@@ -105,6 +105,16 @@
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+  
+  @media (max-width: 767px) {
+    p {
+      text-align: left;
+      hyphens: none;
+    }
+    h2 {
+      font-size: 1.4rem; /* 移动端标题缩小 */
+    }
+  }
 }
 
 .page__hero {
