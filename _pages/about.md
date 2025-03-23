@@ -42,27 +42,23 @@ Educational Background
 
 1. **Meng Zhu**, Weidong Min*, Junwei Han, Qing Han, Shimiao Cui. Improved channel attention methods via hierarchical pooling and reducing information loss. Pattern Recognition, 2024, 148: 1-9. DOI: 10.1016/j.patcog.2023.110148.
 
-   PDF / GitHup / Bibtex
+   [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0031320323008452) / [GitHup](https://github.com/mengzhu0308/GSACA-MECA) / Bibtex
 
 2. **Meng Zhu**, Weidong Min*, Qi Wang, Song Zou, Xinhao Chen. PFLU and FPFLU: Two novel non-monotonic activation functions in convolutional neural networks. Neurocomputing, 2021, 429: 110-117. DOI: 10.1016/j.neucom.2020.11.068.
 
-   PDF / GitHup / Bibtex
+   [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0925231220318749) / [GitHup](https://github.com/mengzhu0308/PFLU-FPFLU) / Bibtex
 
-3. **Meng Zhu**, Weidong Min*, Qing Han, Guowei Zhan, Qiyan Fu, Jiahao Li. ShuffleNeMt: Modern lightweight convolutional neural network architecture [J]. Pattern Analysis and Applications, 2024, 27 (4): 123-134. DOI: 10.1007/s10044-024-01327-3.
+3. **Meng Zhu**, Weidong Min*, Qing Han, Guowei Zhan, Qiyan Fu, Jiahao Li. ShuffleNeMt: Modern lightweight convolutional neural network architecture. Pattern Analysis and Applications, 2024, 27 (4): 123-134. DOI: 10.1007/s10044-024-01327-3.
 
-   PDF / GitHup / Bibtex
-
-4. **Meng Zhu**, Weidong Min*, Hongyue Xiang, Cheng Zha, Zheng Huang, Longfei Li, Qiyan Fu. Spatial decomposition and aggregation for attention in convolutional neural networks. International Journal of Pattern Recognition and Artificial Intelligence, 2024, 38 (1): 1-15. DOI: 10.1142/S0218001423520195.
-
-   PDF / GitHup / Bibtex
+   [PDF](https://link.springer.com/article/10.1007/s10044-024-01327-3) / [GitHup](https://github.com/mengzhu0308/ShuffleNeMt) / Bibtex
 
 5. **朱梦**，闵卫东*，张煜，段静雯. 基于HardSoftmax的并行选择核注意力. 计算机工程与应用，2021，57 (21): 95-101. DOI: 10.3778/j.issn.1002-8331.2010-0085.
 
-   PDF / GitHup / Bibtex
+   [PDF](http://cea.ceaj.org/CN/10.3778/j.issn.1002-8331.2010-0085?st=alljournals) / [GitHup](https://github.com/mengzhu0308/PSK-Attention) / Bibtex
 
 6. **Meng Zhu**, Weidong Min*, Jiahao Li, Mengxue Liu, Ziyang Deng, Yao Zhang. Constructing a smoothed Leaky ReLU using a linear combination of the smoothed ReLU and identity function. Neural Computing and Applications, 2025: 1-14. DOI: 10.1007/s00521-024-10935-3.
 
-   PDF / GitHup / Bibtex
+   [PDF](https://link.springer.com/article/10.1007/s00521-024-10935-3) / [GitHup](https://github.com/mengzhu0308/LPFLU) / Bibtex
 
 ### Image Inpainting
 
