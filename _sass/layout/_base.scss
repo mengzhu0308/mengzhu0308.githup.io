@@ -61,10 +61,19 @@ small, .small {
 }
 
 p {
-  // 防止首尾标点溢出
-  hanging-punctuation: allow-end;
-  text-indent: 0.5em;
   margin-bottom: 1.3em;
+  text-align: justify;       /* 新增：两端对齐 */
+  hyphens: auto;             /* 连字符换行 */
+  -webkit-hyphens: auto;     /* Safari 兼容 */
+  word-break: break-word;    /* 中文换行优化 */
+}
+
+/* 排除不需要对齐的元素 */
+pre, blockquote, ul, ol {
+  p {
+    text-align: left !important;
+    hyphens: none !important;
+  }
 }
 
 u,
