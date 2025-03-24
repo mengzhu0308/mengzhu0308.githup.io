@@ -1,6 +1,6 @@
 ---
 collection: publications
-permalink: /publication/1-PFLU-and-FPFLU
+permalink: /publication/2021-PFLU-and-FPFLU
 category: article
 title: "PFLU and FPFLU: Two novel non-monotonic activation functions in convolutional neural networks"
 date: 2021
