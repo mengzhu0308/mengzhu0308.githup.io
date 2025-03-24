@@ -38,56 +38,48 @@
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
-        {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' %}
-            <div class="publication-meta">
-			<!-- 添加分类标识 -->
-			{% if post.category %}
-			{% assign category_info = site.publication_category[post.category] %}
-			<span class="pub-category {{ post.category }}">
-				{{ category_info.title | default: post.category }}
-			</span>
-			{% endif %}
-    
-			<!-- 增强的元数据显示 -->
-			<p class="pub-details">
-			{% if post.venue %}<i class="fas fa-book-open"></i> {{ post.venue }},{% endif %}
-			<i class="fas fa-calendar-alt"></i>
-			{% if post.year %}  {# 优先使用自定义年份 #}
-				{{ post.year }}
-			{% else %}
-				{{ post.date | default: "1900-01-01" | date: "%Y" }}
-			{% endif %}
-      
-			{% if post.doi %}  {# DOI 链接 #}
-				| <a href="https://doi.org/{{ post.doi }}" class="doi-link">
-				<i class="ai ai-doi"></i> {{ post.doi }}
-				</a>
-			{% endif %}
-      
-			{% if post.arxiv %}  {# arXiv 链接 #}
-				| <a href="https://arxiv.org/abs/{{ post.arxiv }}" class="arxiv-link">
-				<i class="ai ai-arxiv"></i> {{ post.arxiv }}
-				</a>
-			{% endif %}
-			</p>
-			</div>
-        {% elsif post.date %}
-		 <p class="page__date">
-		 <strong>
-		  <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
-		  {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}
-		 </strong>
-		 <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">
-		  {% if post.year %}  {# 优先显示自定义年份 #}
+		{% if post.collection == 'teaching' %}
+		<!-- 教学类保持原逻辑 -->
+		<p>{{ post.type }}, <i>{{ post.venue }}</i>, 
+		{% if post.date %}
+			{{ post.date | date: "%Y" }}
+		{% elsif post.year %}
 			{{ post.year }}
-		  {% else %}          {# 后备方案：提取日期年份 #}
-			{{ post.date | default: "1900-01-01" | date: "%Y" }}
-		  {% endif %}
-		 </time>
-		 </p>
-        {% endif %}
+		{% endif %}</p>
+
+		{% elsif post.collection == 'publications' %}
+		<!-- 出版物集合增强显示 -->
+		<div class="pub-meta">
+			{% assign display_year = post.date | date: "%Y" | default: post.year %}
+			<p>Published in <i>{{ post.venue }}</i>, <span class="pub-year" data-date="{{ post.date }}" data-year="{{ post.year }}">
+			{{ display_year }}
+			</span></p>
+			{% if post.date and post.year %}<!-- 同时存在时显示警告 -->
+				<small class="text-warning">(Both date and year provided, using date)</small>
+			{% endif %}
+		</div>
+
+		{% elsif post.date or post.year %}
+		<!-- 通用日期显示逻辑 -->
+		<p class="page__date">
+			<strong>
+			<i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+			{{ site.data.ui-text[site.locale].date_label | default: "Published:" }}
+			</strong>
+			<time datetime="
+			{% if post.date %}
+				{{ post.date | date_to_xmlschema }}
+			{% else %}
+				{{ post.year }}-01-01
+			{% endif %}">
+			{% if post.date %}<!-- 优先使用完整日期 -->
+				{{ post.date | date: "%B %d, %Y" }}
+			{% else %}
+				{{ post.year }}
+			{% endif %}
+			</time>
+		</p>
+		{% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
