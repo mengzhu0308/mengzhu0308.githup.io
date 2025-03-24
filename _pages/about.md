@@ -23,18 +23,18 @@ News
 
 # Work Experience
 
-|   Date    | Affiliated Institution | Job Title |
-| :-------: | :--------------------: | :-------: |
-| 2025.-Now |                        |           |
+|   Date    | Institution | Department | Position |
+| :-------: | :---------: | ---------- | :------: |
+| 2025.-Now |             |            |          |
 
 Educational Background
 ======
 
-|      Date       |              University Attended              |                            Degree                            |
-| :-------------: | :-------------------------------------------: | :----------------------------------------------------------: |
-| 2021.09-2024.12 | [Nanchang University](https://www.ncu.edu.cn) | Ph.D. Degree in Information Management and Information Systems |
-| 2018.09-2021.06 |              Nanchang University              |        M.E. Degree in Computer Science and Technology        |
-| 2014.09-2018.06 |              Nanchang University              |        B.E. Degree in Computer Science and Technology        |
+|      Date       |                  University                   |                          Major                           | Degree |
+| :-------------: | :-------------------------------------------: | :------------------------------------------------------: | :----: |
+| 2021.09-2024.12 | [Nanchang University](https://www.ncu.edu.cn) | Degree in Information Management and Information Systems | Ph.D.  |
+| 2018.09-2021.06 |              Nanchang University              |        Degree in Computer Science and Technology         |  M.E.  |
+| 2014.09-2018.06 |              Nanchang University              |        Degree in Computer Science and Technology         |  B.E.  |
 
 
 
