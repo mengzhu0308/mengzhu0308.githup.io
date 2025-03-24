@@ -30,15 +30,16 @@ News
 Educational Background
 ======
 
-{% raw %}{% assign educations = site.data.education %}
 
+
+{% raw %}{% assign educations = site.data.education %}
 <table class="responsive-table">
   <thead>
     <tr>
-      <th>时间段</th>
-      <th>院校</th>
-      <th>专业</th>
-      <th>学位</th>
+      <th>Period</th>
+      <th>University</th>
+      <th>Major</th>
+      <th>Degree</th>
     </tr>
   </thead>
   <tbody>
@@ -61,7 +62,31 @@ Educational Background
 
 ### Basic Architectures of AI
 
-1. **Meng Zhu**, Weidong Min*, Junwei Han, Qing Han, Shimiao Cui. Improved channel attention methods via hierarchical pooling and reducing information loss. Pattern Recognition, 2024, 148: 1-9. DOI: 10.1016/j.patcog.2023.110148.
+1. {% raw %}{% assign educations = site.data.education %}
+   <table class="responsive-table">
+     <thead>
+       <tr>
+         <th>时间段</th>
+         <th>院校</th>
+         <th>专业</th>
+         <th>学位</th>
+       </tr>
+     </thead>
+     <tbody>
+       {% for edu in educations %}
+       <tr>
+         <td data-label="period">{{ edu.period }}</td>
+         <td data-label="university">
+           <a href="{{ edu.university.url }}" target="_blank">
+             {{ edu.university.name }}
+           </a>
+         </td>
+         <td data-label="major">{{ edu.major }}</td>
+         <td data-label="degree">{{ edu.degree }}</td>
+       </tr>
+       {% endfor %}
+     </tbody>
+   </table>{% endraw %}
 
    arXiv / [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0031320323008452) / [GitHup](https://github.com/mengzhu0308/GSACA-MECA) / Bibtex
 

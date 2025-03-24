@@ -15,10 +15,10 @@ Education
 <table class="responsive-table">
   <thead>
     <tr>
-      <th>时间段</th>
-      <th>院校</th>
-      <th>专业</th>
-      <th>学位</th>
+      <th>Period</th>
+      <th>University</th>
+      <th>Major</th>
+      <th>Degree</th>
     </tr>
   </thead>
   <tbody>
