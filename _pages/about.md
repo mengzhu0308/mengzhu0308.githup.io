@@ -65,7 +65,7 @@ Educational Background
 
 ### Basic Architectures of AI
 
-1. **Meng Zhu**, Weidong Min*, Junwei Han, Qing Han, Shimiao Cui. Improved channel attention methods via hierarchical pooling and reducing information loss [J]. Pattern Recognition, 2024, 148: 1-9. DOI: 10.1016/j.patcog.2023.110148.
+1. **Meng Zhu**, Weidong Min*, Junwei Han, Qing Han, Shimiao Cui. Improved channel attention methods via hierarchical pooling and reducing information loss. Pattern Recognition, 2024, 148: 1-9. DOI: 10.1016/j.patcog.2023.110148.
 
    arXiv / [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0031320323008452) / [GitHup](https://github.com/mengzhu0308/GSACA-MECA) / Bibtex
 
