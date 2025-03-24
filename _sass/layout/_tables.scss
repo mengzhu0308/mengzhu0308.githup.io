@@ -1,95 +1,73 @@
 /* ==========================================================================
-   TABLES ENHANCEMENT
+   TABLES
    ========================================================================== */
 
 table {
-  // 保持原有基础样式
   margin-bottom: 1em;
   width: 100%;
   font-family: $global-font-family;
   font-size: $type-size-6;
   border-collapse: collapse;
   border: 1px solid var(--global-border-color);
-  
-  // 新增对齐增强
-  th[data-align="center"],
-  td[data-align="center"] {
-    text-align: center;
-  }
 
-  th[data-align="right"],
-  td[data-align="right"] {
-    text-align: right;
-    padding-right: 1.2em;
-  }
-
-  // 斑马纹增强可读性
-  tr:nth-child(even) {
-    background-color: rgba(var(--global-border-color-rgb), 0.05);
-  }
-
-  // 悬停交互
-  tr:hover {
-    background-color: rgba(var(--global-border-color-rgb), 0.1);
-  }
-
-  // 移动端响应式
-  @media (max-width: $medium) {
-    & {
-      display: block;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      white-space: nowrap;
-      
-      th, td {
-        min-width: 120px;  // 保证最小可读宽度
-      }
-      
-      thead th {
-        font-size: $type-size-6 * 0.9;
-      }
-    }
-  }
-
-  // 小屏深度适配
-  @media (max-width: $small) {
-    td {
-      padding: 0.5em 0.3em;
-      font-size: $type-size-6 * 0.85;
-    }
-    
-    th {
-      padding: 0.5em 0.3em;
-      font-size: $type-size-6 * 0.9;
-    }
+  & + table {
+    margin-top: 1em;
   }
 }
 
-// 表头对比度增强
 thead {
-  background-color: rgba(var(--global-border-color-rgb), 0.15);
-  border-bottom: 2px solid var(--global-border-color); // 加粗分割线
-  
-  th {
-    font-weight: 700; // 提升字重
-    text-transform: uppercase; // 字母大写
-    letter-spacing: 0.08em;
-  }
+  background-color: var(--global-border-color);
+  border-bottom: 1px solid var(--global-border-color);
 }
 
-// 单元格对齐优化
-td, th {
+th {
+  padding: 0.5em;
+  font-weight: bold;
+  text-align: left;
+  border-right: 1px solid var(--global-border-color);
+}
+
+td {
+  padding: 0.5em;
+  border-bottom: 1px solid var(--global-border-color);
+  border-right: 1px solid var(--global-border-color);
+}
+
+tr, td, th {
   vertical-align: middle;
-  
-  // 数值型内容右对齐
-  &:nth-child(n+3):not(:last-child) {
-    text-align: right;
-    font-feature-settings: "tnum"; // 启用表格数字
+}
+
+/* 全局表格基础样式 */
+.table-wrapper {
+  margin: 2rem auto;
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+
+    th, td {
+      text-align: center;
+      vertical-align: middle;
+      padding: 1rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      background-color: #f8f9fa;
+      font-weight: 500;
+    }
   }
-  
-  // 首列强调
-  &:first-child {
-    font-weight: 500;
-    color: var(--global-text-color-dark);
+
+  // 响应式处理
+  @media (max-width: 768px) {
+    margin: 1rem -15px;
+    padding: 0 15px;
+    
+    table {
+      min-width: 100%;
+      th, td { padding: 0.8rem; }
+    }
   }
 }

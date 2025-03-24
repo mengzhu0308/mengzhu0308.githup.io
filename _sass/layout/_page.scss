@@ -418,3 +418,24 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+
+/* CV/About 页面表格特殊定制 */
+.table-wrapper-cv-education,
+.table-wrapper-about-education {
+  max-width: 900px;
+  
+  td:nth-child(3) { // 专业列优化
+    max-width: 250px;
+    white-space: normal;
+  }
+}
+
+.table-wrapper-cv-work-experience,
+.table-wrapper-about-work-experience {
+  td:empty::after { // 空单元格提示
+    content: "待更新";
+    color: #999;
+    font-style: italic;
+  }
+}

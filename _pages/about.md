@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-**I** earned the Ph.D. degree in information management and information systems from Nanchang University, China in 2024, apprenticing under Prof. [Weidong Min](https://smcs.ncu.edu.cn/szdw/jsml/ce79f6f094154067a7dda50292b90603.htm). I earned the M.E. and B.E. degrees in computer science and technology from Nanchang University, China in 2021 and 2018, respectively. My current research interests are basic architectures of AI, learning dynamics of deep neural network models, AI4Science, multimedia forensics and snapshot compressive imaging. I am a Reviewer of *EAAI*.
+**I** earned the Ph.D. degree in information management and information systems from [Nanchang University](https://www.ncu.edu.cn/), China in 2024, apprenticing under Prof. [Weidong Min](https://smcs.ncu.edu.cn/szdw/jsml/ce79f6f094154067a7dda50292b90603.htm). I earned the M.E. and B.E. degrees in computer science and technology from Nanchang University, China in 2021 and 2018, respectively. My current research interests are basic architectures of AI, learning dynamics of deep neural network models, AI4Science, multimedia forensics and snapshot compressive imaging. I am a Reviewer of *EAAI*.
 
 # Research Interests
 
@@ -23,22 +23,32 @@ News
 
 # Work Experience
 
-|   Date    | Institution | Department | Position |
-| :-------: | :---------: | :--------: | :------: |
-| 2025.-Now |             |            |          |
+<div class="table-wrapper-about-work-experience">
+  <table>
+    <thead>
+      <tr>
+        <th>Period</th>
+        <th>Institution</th>
+        <th>Department</th>
+        <th>Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2025-Present</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-Educational Background
+
+Education
 ======
 
-{% raw %}
-
-<pre>Debug Data: {{ site.data.education | inspect }}</pre>
-
-{% endraw %}
-
-{% raw %}{% assign educations = site.data.education %}
-
-<div class="table-wrapper">
+<div class="table-wrapper-about-education">
   <table>
     <thead>
       <tr>
@@ -49,22 +59,28 @@ Educational Background
       </tr>
     </thead>
     <tbody>
-      {% for edu in educations %}
       <tr>
-        <td>{{ edu.period }}</td>
-        <td>
-          <a href="{{ edu.university.url }}" target="_blank" rel="noopener">
-            {{ edu.university.name }}
-          </a>
-        </td>
-        <td>{{ edu.major }}</td>
-        <td>{{ edu.degree }}</td>
+        <td>2021.09-2024.12</td>
+        <td><a href="https://www.ncu.edu.cn" target="_blank" rel="noopener">Nanchang University</a></td>
+        <td>Information Management and Information Systems</td>
+        <td>Ph.D.</td>
       </tr>
-      {% endfor %}
+      <tr>
+        <td>2018.09-2021.06</td>
+        <td>Nanchang University</td>
+        <td>Computer Science and Technology</td>
+        <td>M.E.</td>
+      </tr>
+      <tr>
+        <td>2014.09-2018.06</td>
+        <td>Nanchang University</td>
+        <td>Computer Science and Technology</td>
+        <td>B.E.</td>
+      </tr>
     </tbody>
   </table>
 </div>
-{% endraw %}
+
 
 
 # Representative Achievements

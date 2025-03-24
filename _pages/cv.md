@@ -12,12 +12,7 @@ redirect_from:
 Education
 ======
 
-{% raw %}
-<pre>Debug Data: {{ site.data.education | inspect }}</pre>
-{% endraw %}
-
-{% raw %}{% assign educations = site.data.education %}
-<div class="table-wrapper">
+<div class="table-wrapper-cv-education">
   <table>
     <thead>
       <tr>
@@ -28,28 +23,54 @@ Education
       </tr>
     </thead>
     <tbody>
-      {% for edu in educations %}
       <tr>
-        <td>{{ edu.period }}</td>
-        <td>
-          <a href="{{ edu.university.url }}" target="_blank" rel="noopener">
-            {{ edu.university.name }}
-          </a>
-        </td>
-        <td>{{ edu.major }}</td>
-        <td>{{ edu.degree }}</td>
+        <td>2021.09-2024.12</td>
+        <td><a href="https://www.ncu.edu.cn" target="_blank" rel="noopener">Nanchang University</a></td>
+        <td>Information Management and Information Systems</td>
+        <td>Ph.D.</td>
       </tr>
-      {% endfor %}
+      <tr>
+        <td>2018.09-2021.06</td>
+        <td>Nanchang University</td>
+        <td>Computer Science and Technology</td>
+        <td>M.E.</td>
+      </tr>
+      <tr>
+        <td>2014.09-2018.06</td>
+        <td>Nanchang University</td>
+        <td>Computer Science and Technology</td>
+        <td>B.E.</td>
+      </tr>
     </tbody>
   </table>
 </div>
-{% endraw %}
-Work experience
+
+
+Work Experience
 ======
 
-|   Date    | Institution | Department | Position |
-| :-------: | :---------: | :--------: | :------: |
-| 2025.-Now |             |            |          |
+<div class="table-wrapper-cv-work-experience">
+  <table>
+    <thead>
+      <tr>
+        <th>Period</th>
+        <th>Institution</th>
+        <th>Department</th>
+        <th>Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2025-Present</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
 
 Publications
 ======
@@ -70,5 +91,5 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-Service and leadership
+Service and Leadership
 ======
