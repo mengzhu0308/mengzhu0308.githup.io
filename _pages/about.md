@@ -30,8 +30,6 @@ News
 Educational Background
 ======
 
-
-
 {% raw %}{% assign educations = site.data.education %}
 <table class="responsive-table">
   <thead>
@@ -56,7 +54,10 @@ Educational Background
     </tr>
     {% endfor %}
   </tbody>
-</table>{% endraw %}
+</table>
+
+{% endraw %}
+
 
 # Representative Achievements
 

@@ -11,7 +11,9 @@ redirect_from:
 
 Education
 ======
+
 {% raw %}{% assign educations = site.data.education %}
+
 <table class="responsive-table">
   <thead>
     <tr>
@@ -35,7 +37,9 @@ Education
     </tr>
     {% endfor %}
   </tbody>
-</table>{% endraw %}
+</table>
+
+{% endraw %}
 
 Work experience
 ======
