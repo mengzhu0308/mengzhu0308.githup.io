@@ -41,9 +41,52 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+            <div class="publication-meta">
+			<!-- 添加分类标识 -->
+			{% if post.category %}
+			{% assign category_info = site.publication_category[post.category] %}
+			<span class="pub-category {{ post.category }}">
+				{{ category_info.title | default: post.category }}
+			</span>
+			{% endif %}
+    
+			<!-- 增强的元数据显示 -->
+			<p class="pub-details">
+			{% if post.venue %}<i class="fas fa-book-open"></i> {{ post.venue }},{% endif %}
+			<i class="fas fa-calendar-alt"></i>
+			{% if post.year %}  {# 优先使用自定义年份 #}
+				{{ post.year }}
+			{% else %}
+				{{ post.date | default: "1900-01-01" | date: "%Y" }}
+			{% endif %}
+      
+			{% if post.doi %}  {# DOI 链接 #}
+				| <a href="https://doi.org/{{ post.doi }}" class="doi-link">
+				<i class="ai ai-doi"></i> {{ post.doi }}
+				</a>
+			{% endif %}
+      
+			{% if post.arxiv %}  {# arXiv 链接 #}
+				| <a href="https://arxiv.org/abs/{{ post.arxiv }}" class="arxiv-link">
+				<i class="ai ai-arxiv"></i> {{ post.arxiv }}
+				</a>
+			{% endif %}
+			</p>
+			</div>
         {% elsif post.date %}
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+		 <p class="page__date">
+		 <strong>
+		  <i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
+		  {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}
+		 </strong>
+		 <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">
+		  {% if post.year %}  {# 优先显示自定义年份 #}
+			{{ post.year }}
+		  {% else %}          {# 后备方案：提取日期年份 #}
+			{{ post.date | default: "1900-01-01" | date: "%Y" }}
+		  {% endif %}
+		 </time>
+		 </p>
         {% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
