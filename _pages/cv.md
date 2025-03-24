@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -32,7 +32,6 @@ Work Experience and Education
     </tbody>
   </table>
 </div>
-
 <div class="table-wrapper-cv-education">
   <table>
     <thead>
@@ -65,6 +64,7 @@ Work Experience and Education
     </tbody>
   </table>
 </div>
+
 
 Publications
 ======
