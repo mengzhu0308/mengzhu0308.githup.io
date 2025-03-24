@@ -1,14 +1,20 @@
 - period: 2021.09-2024.12
-  university: Nanchang University
+  university: 
+    name: Nanchang University
+    url: https://www.ncu.edu.cn
   major: Information Management and Information Systems
   degree: Ph.D.
 
 - period: 2018.09-2021.06
-  university: Nanchang University
+  university: 
+    name: Nanchang University
+    url: https://www.ncu.edu.cn
   major: Computer Science and Technology
   degree: M.E.
   
  - period: 2014.09-2018.06
-  university: Nanchang University
+  university: 
+    name: Nanchang University
+    url: https://www.ncu.edu.cn
   major: Computer Science and Technology
   degree: B.E.

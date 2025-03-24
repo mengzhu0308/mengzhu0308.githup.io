@@ -30,15 +30,28 @@ News
 Educational Background
 ======
 
-{% raw %}<table>
-  <thead>...</thead>
-  <tbody>
-    {% for item in site.data.education %}
+{% raw %}{% assign educations = site.data.education %}
+
+<table class="responsive-table">
+  <thead>
     <tr>
-      <td>{{ item.period }}</td>
-      <td>{{ item.university }}</td>
-      <td>{{ item.major }}</td>
-      <td>{{ item.degree }}</td>
+      <th>时间段</th>
+      <th>院校</th>
+      <th>专业</th>
+      <th>学位</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for edu in educations %}
+    <tr>
+      <td data-label="period">{{ edu.period }}</td>
+      <td data-label="university">
+        <a href="{{ edu.university.url }}" target="_blank">
+          {{ edu.university.name }}
+        </a>
+      </td>
+      <td data-label="major">{{ edu.major }}</td>
+      <td data-label="degree">{{ edu.degree }}</td>
     </tr>
     {% endfor %}
   </tbody>
