@@ -12,34 +12,38 @@ redirect_from:
 Education
 ======
 
+```
 {% raw %}{% assign educations = site.data.education %}
 
-<table class="responsive-table">
-  <thead>
-    <tr>
-      <th>Period</th>
-      <th>University</th>
-      <th>Major</th>
-      <th>Degree</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for edu in educations %}
-    <tr>
-      <td data-label="period">{{ edu.period }}</td>
-      <td data-label="university">
-        <a href="{{ edu.university.url }}" target="_blank">
-          {{ edu.university.name }}
-        </a>
-      </td>
-      <td data-label="major">{{ edu.major }}</td>
-      <td data-label="degree">{{ edu.degree }}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<div class="table-wrapper">
+  <table>
+    <thead>
+      <tr>
+        <th>Period</th>
+        <th>University</th>
+        <th>Major</th>
+        <th>Degree</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for edu in educations %}
+      <tr>
+        <td>{{ edu.period }}</td>
+        <td>
+          <a href="{{ edu.university.url }}" target="_blank" rel="noopener">
+            {{ edu.university.name }}
+          </a>
+        </td>
+        <td>{{ edu.major }}</td>
+        <td>{{ edu.degree }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>{% endraw %}
+```
 
-{% endraw %}
+
 
 Work experience
 ======
