@@ -9,8 +9,29 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+Work Experience and Education
 ======
+
+<div class="table-wrapper-cv-work-experience">
+  <table>
+    <thead>
+      <tr>
+        <th>Period</th>
+        <th>Institution</th>
+        <th>Department</th>
+        <th>Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2025-Present</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <div class="table-wrapper-cv-education">
   <table>
@@ -44,33 +65,6 @@ Education
     </tbody>
   </table>
 </div>
-
-
-Work Experience
-======
-
-<div class="table-wrapper-cv-work-experience">
-  <table>
-    <thead>
-      <tr>
-        <th>Period</th>
-        <th>Institution</th>
-        <th>Department</th>
-        <th>Position</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2025-Present</td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-
 
 Publications
 ======

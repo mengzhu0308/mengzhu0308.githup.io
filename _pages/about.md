@@ -1,4 +1,5 @@
 ---
+
 permalink: /
 title: ""
 author_profile: true
@@ -19,9 +20,7 @@ redirect_from:
 News
 ======
 
-
-
-# Work Experience
+# Work Experience and Education
 
 <div class="table-wrapper-about-work-experience">
   <table>
@@ -43,11 +42,6 @@ News
     </tbody>
   </table>
 </div>
-
-
-Education
-======
-
 <div class="table-wrapper-about-education">
   <table>
     <thead>
@@ -80,8 +74,6 @@ Education
     </tbody>
   </table>
 </div>
-
-
 
 # Representative Achievements
 
