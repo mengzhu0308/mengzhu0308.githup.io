@@ -49,4 +49,6 @@ html[data-theme="dark"] {
     --global-text-color                 : #{$text};
     --global-text-color-light           : #{$light-gray};
     --global-thead-color                : #{$background-lighter};
+	--th-bg-color                       : #2a2a2a;   /* 暗色模式下表头背景色 */
+    --th-text-color                     : #ffffff; /* 暗色模式下表头文字颜色 */
 }

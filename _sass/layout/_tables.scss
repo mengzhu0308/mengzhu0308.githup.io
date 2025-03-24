@@ -16,8 +16,9 @@ table {
 }
 
 thead {
-  background-color: var(--global-border-color);
+  background-color: var(--th-bg-color, var(--global-border-color)); // 新增变量
   border-bottom: 1px solid var(--global-border-color);
+  color: var(--th-text-color, inherit); // 新增文本颜色变量
 }
 
 th {
