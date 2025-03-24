@@ -37,37 +37,52 @@ tr, td, th {
   vertical-align: middle;
 }
 
-/* 全局表格基础样式 */
-.table-wrapper {
-  margin: 2rem auto;
+.table-wrapper-about-education,
+.table-wrapper-about-work-experience,
+.table-wrapper-cv-education,
+.table-wrapper-cv-work-experience {
+  width: 100%;
   overflow-x: auto;
+  margin: 20px 0;
+}
 
-  table {
-    width: 100%;
+.table-wrapper-about-education table,
+.table-wrapper-about-work-experience table,
+.table-wrapper-cv-education table,
+.table-wrapper-cv-work-experience table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  
+  @media screen and (max-width: 768px) {
     min-width: 600px;
-    border-collapse: collapse;
-
-    th, td {
-      text-align: center;
-      vertical-align: middle;
-      padding: 1rem;
-      border-bottom: 1px solid #eee;
-    }
-
-    th {
-      background-color: #f8f9fa;
-      font-weight: 500;
-    }
   }
+}
 
-  // 响应式处理
-  @media (max-width: 768px) {
-    margin: 1rem -15px;
-    padding: 0 15px;
-    
-    table {
-      min-width: 100%;
-      th, td { padding: 0.8rem; }
-    }
+.table-wrapper-about-education th,
+.table-wrapper-about-education td,
+.table-wrapper-about-work-experience th,
+.table-wrapper-about-work-experience td,
+.table-wrapper-cv-education th,
+.table-wrapper-cv-education td,
+.table-wrapper-cv-work-experience th,
+.table-wrapper-cv-work-experience td {
+  padding: 12px 15px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  
+  @media screen and (max-width: 768px) {
+    padding: 8px 10px;
+    font-size: 14px;
   }
+}
+
+.table-wrapper-about-education th,
+.table-wrapper-about-work-experience th,
+.table-wrapper-cv-education th,
+.table-wrapper-cv-work-experience th {
+  background-color: #f8f9fa;
+  font-weight: 600;
 }
