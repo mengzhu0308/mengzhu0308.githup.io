@@ -3,14 +3,12 @@ collection: publications
 permalink: /publication/1-PFLU-and-FPFLU
 category: article
 title: "PFLU and FPFLU: Two novel non-monotonic activation functions in convolutional neural networks"
-authors: 'Meng Zhu, Weidong Min, Qi Wang, et al'
-year: 2021
+date: 2021
 venue: 'Neurocomputing'
-doi: '10.1016/j.neucom.2020.11.068'
 slidesurl: ''
-paperurl: '/files/1-PFLU-and-FPFLU.pdf'
+paperurl: 'https://mengzhu0308.github.io/mengzhu0308.githup.io/files/papers/1-PFLU-and-FPFLU.pdf'
 excerpt: 'This paper is about activation functions.'
-citation: 'Meng Zhu, Weidong Min*, Qi Wang, Song Zou, Xinhao Chen. PFLU and FPFLU: Two novel non-monotonic activation functions in convolutional neural networks. Neurocomputing, 2021, 429: 110-117. DOI: 10.1016/j.neucom.2020.11.068.'
+citation: 'Meng Zhu, Weidong Min*, Qi Wang, et al. PFLU and FPFLU: Two novel non-monotonic activation functions in convolutional neural networks. Neurocomputing, 2021, 429: 110-117. DOI: 10.1016/j.neucom.2020.11.068.'
 ---
 
 The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
