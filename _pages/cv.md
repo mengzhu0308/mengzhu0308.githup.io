@@ -12,8 +12,11 @@ redirect_from:
 Education
 ======
 
-{% raw %}{% assign educations = site.data.education %}
+{% raw %}
+<pre>Debug Data: {{ site.data.education | inspect }}</pre>
+{% endraw %}
 
+{% raw %}{% assign educations = site.data.education %}
 <div class="table-wrapper">
   <table>
     <thead>
@@ -40,9 +43,7 @@ Education
     </tbody>
   </table>
 </div>
-
 {% endraw %}
-
 Work experience
 ======
 

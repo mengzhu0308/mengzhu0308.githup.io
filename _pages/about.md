@@ -30,6 +30,12 @@ News
 Educational Background
 ======
 
+{% raw %}
+
+<pre>Debug Data: {{ site.data.education | inspect }}</pre>
+
+{% endraw %}
+
 {% raw %}{% assign educations = site.data.education %}
 
 <div class="table-wrapper">
