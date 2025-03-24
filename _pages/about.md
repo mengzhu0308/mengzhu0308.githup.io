@@ -30,7 +30,6 @@ News
 Educational Background
 ======
 
-```
 {% raw %}{% assign educations = site.data.education %}
 
 <div class="table-wrapper">
@@ -58,39 +57,15 @@ Educational Background
       {% endfor %}
     </tbody>
   </table>
-</div>{% endraw %}
-```
+</div>
+{% endraw %}
 
 
 # Representative Achievements
 
 ### Basic Architectures of AI
 
-1. {% raw %}{% assign educations = site.data.education %}
-   <table class="responsive-table">
-     <thead>
-       <tr>
-         <th>时间段</th>
-         <th>院校</th>
-         <th>专业</th>
-         <th>学位</th>
-       </tr>
-     </thead>
-     <tbody>
-       {% for edu in educations %}
-       <tr>
-         <td data-label="period">{{ edu.period }}</td>
-         <td data-label="university">
-           <a href="{{ edu.university.url }}" target="_blank">
-             {{ edu.university.name }}
-           </a>
-         </td>
-         <td data-label="major">{{ edu.major }}</td>
-         <td data-label="degree">{{ edu.degree }}</td>
-       </tr>
-       {% endfor %}
-     </tbody>
-   </table>{% endraw %}
+1. **Meng Zhu**, Weidong Min*, Junwei Han, Qing Han, Shimiao Cui. Improved channel attention methods via hierarchical pooling and reducing information loss [J]. Pattern Recognition, 2024, 148: 1-9. DOI: 10.1016/j.patcog.2023.110148.
 
    arXiv / [PDF](https://www.sciencedirect.com/science/article/abs/pii/S0031320323008452) / [GitHup](https://github.com/mengzhu0308/GSACA-MECA) / Bibtex
 
@@ -102,11 +77,11 @@ Educational Background
 
    arXiv / [PDF](https://link.springer.com/article/10.1007/s10044-024-01327-3) / [GitHup](https://github.com/mengzhu0308/ShuffleNeMt) / Bibtex
 
-5. **朱梦**，闵卫东*，张煜，段静雯. 基于HardSoftmax的并行选择核注意力. 计算机工程与应用，2021，57 (21): 95-101. DOI: 10.3778/j.issn.1002-8331.2010-0085.
+4. **朱梦**，闵卫东*，张煜，段静雯. 基于HardSoftmax的并行选择核注意力. 计算机工程与应用，2021，57 (21): 95-101. DOI: 10.3778/j.issn.1002-8331.2010-0085.
 
    arXiv / [PDF](http://cea.ceaj.org/CN/10.3778/j.issn.1002-8331.2010-0085?st=alljournals) / [GitHup](https://github.com/mengzhu0308/PSK-Attention) / Bibtex
 
-6. **Meng Zhu**, Weidong Min*, Jiahao Li, Mengxue Liu, Ziyang Deng, Yao Zhang. Constructing a smoothed Leaky ReLU using a linear combination of the smoothed ReLU and identity function. Neural Computing and Applications, 2025: 1-14. DOI: 10.1007/s00521-024-10935-3.
+5. **Meng Zhu**, Weidong Min*, Jiahao Li, Mengxue Liu, Ziyang Deng, Yao Zhang. Constructing a smoothed Leaky ReLU using a linear combination of the smoothed ReLU and identity function. Neural Computing and Applications, 2025: 1-14. DOI: 10.1007/s00521-024-10935-3.
 
    arXiv / [PDF](https://link.springer.com/article/10.1007/s00521-024-10935-3) / [GitHup](https://github.com/mengzhu0308/LPFLU) / Bibtex
 
