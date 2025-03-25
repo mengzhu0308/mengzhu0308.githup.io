@@ -4,7 +4,8 @@ collection: publications
 category: articles
 permalink: /publication/2010-10-01-paper-title-number-2
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
+date: 2010-01-01
+year_month: 2010-01
 venue: 'Journal 1'
 slidesurl: ''
 paperurl: 'files/paper2.pdf'
