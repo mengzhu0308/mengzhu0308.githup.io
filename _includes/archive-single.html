@@ -39,8 +39,8 @@
     {% endif %}
 
 		{% if post.collection == 'teaching' %}
+		<!-- Teaching collection日期处理 -->
 			<p>{{ post.type }}, <i>{{ post.venue }}</i>, 
-			{% comment %} Teaching collection日期处理 {% endcomment %}
 			{% if post.date %}
 				{% assign date_segments = post.date | split: "-" %}
 				{% if date_segments.size >= 3 %}
@@ -51,12 +51,12 @@
 					{{ post.date | date: "%Y" }}
 				{% endif %}
 			{% else %}
-				{{ "1995-01-01" | date: "%Y" }}
+				{{ "N/A" }}
 			{% endif %}</p>
 
 		{% elsif post.collection == 'publications' %}
+		<!-- Publications collection日期处理 -->
 			<p>Published in <i>{{ post.venue }}</i>, 
-			{% comment %} Publications collection日期处理 {% endcomment %}
 			{% if post.date %}
 				{% assign date_segments = post.date | split: "-" %}
 				{% if date_segments.size >= 3 %}
@@ -67,16 +67,16 @@
 					{{ post.date | date: "%Y" }}
 				{% endif %}
 			{% else %}
-				{{ "1995-01-01" | date: "%Y" }}
+				{{ "N/A" }}
 			{% endif %}</p>
 
 		{% else %}
-			{% comment %} 其他内容的日期处理 {% endcomment %}
-			{% if post.date %}
+			<!-- 其他内容的日期处理 -->
 			<p class="page__date">
 			<strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
-			{% assign date_segments = post.date | split: "-" %}
-			<time datetime="{{ post.date | date_to_xmlschema }}">
+			<time datetime="{{ post.date | '%Y-%m-%d' }}">
+			{% if post.date %}
+				{% assign date_segments = post.date | split: "-" %}
 				{% if date_segments.size >= 3 %}
 					{{ post.date | date: "%B %d, %Y" }}
 				{% elsif date_segments.size == 2 %}
@@ -84,9 +84,11 @@
 				{% else %}
 					{{ post.date | date: "%Y" }}
 				{% endif %}
+			{% else %}
+				{{ "N/A" }}
+			{% endif %}
 			</time>
 			</p>
-			{% endif %}
 		{% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
