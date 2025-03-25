@@ -28,7 +28,7 @@ author:
   bio              : "A Lecturer of ** University"
   location         : "China"
   employer         : "** University"
-  uri              : # URL
+  uri              : "https://www.jxufe.edu.cn"
   email            : "jxncmengzhu@gmail.com" 
 
   # Academic websites
@@ -73,7 +73,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : # Username
+  zhihu            : "https://www.zhihu.com/people/mengzhu0308"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
