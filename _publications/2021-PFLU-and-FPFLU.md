@@ -3,7 +3,7 @@ collection: publications
 permalink: /publication/2021-PFLU-and-FPFLU
 category: articles
 title: "PFLU and FPFLU: Two novel non-monotonic activation functions in convolutional neural networks"
-year-month: 2021-12
+date: 2021
 venue: 'Neurocomputing'
 slidesurl: ''
 paperurl: 'https://mengzhu0308.github.io/mengzhu0308.githup.io/files/papers/1-PFLU-and-FPFLU.pdf'
