@@ -42,11 +42,14 @@
 		  <p>{{ post.type }}, <i>{{ post.venue }}</i>, 
 		  <!-- Teaching collection日期处理 -->
 		  {% if post.date %}
-			{{ post.date | date: "%B %d, %Y" }}
-		  {% elsif post.year_month %}
-			{{ post.year_month | append: "-01" | date: "%B, %Y" }}
-		  {% elsif post.year %}
-			{{ post.year }}
+		    {% assign date_segments = post.date | split: "-" %}
+			{% if date_segments.size >= 3 %}
+			  {{ post.date | date: "%B %d, %Y" }}
+			{% elsif date_segments.size == 2 %}
+			  {{ post.date | date: "%B, %Y" }}
+			{% else %}
+			  {{ post.date | date: "%Y" }}
+			{% endif %}
 		  {% else %}
 			{{ "N/A" }}
 		  {% endif %}</p>
@@ -54,28 +57,34 @@
 		  <p>Published in <i>{{ post.venue }}</i>, 
 		  <!-- Publications collection日期处理 -->
 		  {% if post.date %}
-			{{ post.date | date: "%B %d, %Y" }}
-		  {% elsif post.year_month %}
-			{{ post.year_month | append: "-01" | date: "%B, %Y" }}
-		  {% elsif post.year %}
-			{{ post.year }}
+			{% assign date_segments = post.date | split: "-" %}
+			{% if date_segments.size >= 3 %}
+			  {{ post.date | date: "%B %d, %Y" }}
+			{% elsif date_segments.size == 2 %}
+			  {{ post.date | date: "%B, %Y" }}
+			{% else %}
+			  {{ post.date | date: "%Y" }}
+			{% endif %}
 		  {% else %}
 			{{ "N/A" }}
 		  {% endif %}</p>
-		{% else %}
+		{% elseif post.date%}
 		  <!-- 其他内容的日期处理 -->
-		  {% if post.date %}
+		  {% assign date_segments = post.date | split: "-" %}
+		  {% if date_segments.size >= 3 %}
 			<p class="page__date">
 			<strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
 			<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></p>
-		  {% elsif post.year_month %}
+		  {% elsif date_segments.size == 2 %}
+			 <p class="page__date">
+			 <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
+			 <time datetime="{{ post.date }}-01">{{ post.date | append: "-01" | date: "%B, %Y" }}</time>
+			 </p>
+		  {% else %}
 			<p class="page__date">
 			<strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
-			<time datetime="{{ post.year_month }}-01">{{ post.year_month | append: "-01" | date: "%B, %Y" }}</time></p>
-		  {% elsif post.year %}
-			<p class="page__date">
-			<strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
-			<time datetime="{{ post.year }}-01-01">{{ post.year }}</time></p>
+			<time datetime="{{ post.date }}-01-01">{{ post.date }}</time>
+			</p>
 		  {% endif %}
 		{% endif %}
 
