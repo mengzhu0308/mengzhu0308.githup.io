@@ -12,7 +12,8 @@
   {% assign title = post.title %}
 {% endif %}
 
-{% assign date_parts = post.date | split: '-' %}
+{% assign date_parts = post.date | default: "1900-01-01" | split: '-' %}
+{% assign date_format = "%Y" %}
 {% if date_parts.size >= 3 %}
   {% assign date_format = "%B %d, %Y" %}
 {% elsif date_parts.size == 2 %}
