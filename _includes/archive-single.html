@@ -39,46 +39,52 @@
     {% endif %}
 
 		{% if post.collection == 'teaching' %}
-		<!-- 教学类保持原逻辑 -->
-		<p>{{ post.type }}, <i>{{ post.venue }}</i>, 
-		{% if post.date %}
-			{{ post.date | date: "%Y" }}
-		{% elsif post.year %}
-			{{ post.year }}
-		{% endif %}</p>
+			<p>{{ post.type }}, <i>{{ post.venue }}</i>, 
+			{% comment %} Teaching collection日期处理 {% endcomment %}
+			{% if post.date %}
+				{{ post.date | date: "%B %d, %Y" }}
+			{% elsif post.year_month %}
+				{{  post.year_month | append: "-01" | date: "%B, %Y" }}
+			{% elsif post.year %}
+				{{ post.year }}
+			{% else %}
+				{{ "1900-01-01" | date: "%Y" }}
+			{% endif %}</p>
 
 		{% elsif post.collection == 'publications' %}
-		<!-- 出版物集合增强显示 -->
-		<div class="pub-meta">
-			{% assign display_year = post.date | date: "%Y" | default: post.year %}
-			<p>Published in <i>{{ post.venue }}</i>, <span class="pub-year" data-date="{{ post.date }}" data-year="{{ post.year }}">
-			{{ display_year }}
-			</span></p>
-			{% if post.date and post.year %}<!-- 同时存在时显示警告 -->
-				<small class="text-warning">(Both date and year provided, using date)</small>
-			{% endif %}
-		</div>
-
-		{% elsif post.date or post.year %}
-		<!-- 通用日期显示逻辑 -->
-		<p class="page__date">
-			<strong>
-			<i class="fa fa-fw fa-calendar" aria-hidden="true"></i>
-			{{ site.data.ui-text[site.locale].date_label | default: "Published:" }}
-			</strong>
-			<time datetime="
+			<p>Published in <i>{{ post.venue }}</i>, 
+			{% comment %} Publications collection日期处理 {% endcomment %}
 			{% if post.date %}
-				{{ post.date | date_to_xmlschema }}
-			{% else %}
-				{{ post.year }}-01-01
-			{% endif %}">
-			{% if post.date %}<!-- 优先使用完整日期 -->
 				{{ post.date | date: "%B %d, %Y" }}
-			{% else %}
+			{% elsif post.year_month %}
+				{{  post.year_month | append: "-01" | date: "%B, %Y" }}
+			{% elsif post.year %}
 				{{ post.year }}
+			{% else %}
+				{{ "1900-01-01" | date: "%Y" }}
+			{% endif %}</p>
+
+		{% else %}
+			{% comment %} 其他内容的日期处理 {% endcomment %}
+			{% if post.date %}
+				<p class="page__date">
+				<strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> 
+				{{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
+				<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+				</p>
+			{% elsif post.year_month %}
+				<p class="page__date">
+				<strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> 
+				{{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
+				<time datetime="{{ post.year_month }}-01">{{ post.year_month | append: "-01" | date: "%B, %Y" }}</time>
+				</p>
+			{% elsif post.year %}
+				<p class="page__date">
+				<strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> 
+				{{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
+				<time datetime="{{ post.year }}-01-01">{{ post.year }}</time>
+				</p>
 			{% endif %}
-			</time>
-		</p>
 		{% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}

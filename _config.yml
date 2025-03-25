@@ -77,9 +77,9 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  book:
+  books:
     title: 'Books'
-  article:
+  articles:
     title: 'Journal Articles'    
   inproceedings:
     title: 'Conference Papers'
