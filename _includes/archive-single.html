@@ -58,7 +58,7 @@
 			<p>Published in <i>{{ post.venue }}</i>, 
 			{% comment %} Publications collection日期处理 {% endcomment %}
 			{% if post.date %}
-				% assign date_segments = post.date | split: "-" %}
+				{% assign date_segments = post.date | split: "-" %}
 				{% if date_segments.size >= 3 %}
 					{{ post.date | date: "%B %d, %Y" }}
 				{% elsif date_segments.size == 2 %}
