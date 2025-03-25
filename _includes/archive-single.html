@@ -65,16 +65,18 @@
 		{% else %}
 		  <!-- 其他内容的日期处理 -->
 		  {% if post.date %}
-		  <p class="page__date">
+			<p class="page__date">
 			<strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
-			{% if post.date %}
-			  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-			{% elsif post.year_month %}
-			  <time datetime="{{ post.year_month }}-01">{{ post.year_month | append: "-01" | date: "%B, %Y" }}</time>
-			{% elsif post.year %}
-			  <time datetime="{{ post.year }}-01-01">{{ post.year }}</time>
-			{% endif %}
-		  </p>
+			<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></p>
+		  {% elsif post.year_month %}
+			<p class="page__date">
+			<strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
+			<time datetime="{{ post.year_month }}-01">{{ post.year_month | append: "-01" | date: "%B, %Y" }}</time></p>
+		  {% elsif post.year %}
+			<p class="page__date">
+			<strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong>
+			<time datetime="{{ post.year }}-01-01">{{ post.year }}</time></p>
+		  {% endif %}
 		{% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
