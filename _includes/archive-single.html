@@ -13,7 +13,7 @@
 {% endif %}
 
 {% assign date_parts = post.date | split: '-' %}
-{% if date_parts.size == 3 %}
+{% if date_parts.size >= 3 %}
   {% assign date_format = "%B %d, %Y" %}
 {% elsif date_parts.size == 2 %}
   {% assign date_format = "%B, %Y" %}
