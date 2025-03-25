@@ -54,7 +54,7 @@
 		  <p>Published in <i>{{ post.venue }}</i>, 
 		  <!-- Publications collection日期处理 -->
 		  {% if post.date %}
-			{{ post.date | date: "B %d, %Y" }}
+			{{ post.date | date: "%B %d, %Y" }}
 		  {% elsif post.year_month %}
 			{{ post.year_month | append: "-01" | date: "%B, %Y" }}
 		  {% elsif post.year %}
