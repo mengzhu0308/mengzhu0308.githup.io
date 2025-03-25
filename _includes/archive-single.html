@@ -46,9 +46,9 @@
 			{% if date_segments.size >= 3 %}
 			  {{ post.date | date: "%B %d, %Y" }}
 			{% elsif date_segments.size == 2 %}
-			  {{ post.date | date: "%B, %Y" }}
+			  {{ post.date | append: "-01" | date: "%B, %Y" }}
 			{% else %}
-			  {{ post.date | date: "%Y" }}
+			  {{ post.date }}
 			{% endif %}
 		  {% else %}
 			{{ "N/A" }}
@@ -61,9 +61,9 @@
 			{% if date_segments.size >= 3 %}
 			  {{ post.date | date: "%B %d, %Y" }}
 			{% elsif date_segments.size == 2 %}
-			  {{ post.date | date: "%B, %Y" }}
+			  {{ post.date | append: "-01" | date: "%B, %Y" }}
 			{% else %}
-			  {{ post.date | date: "%Y" }}
+			  {{ post.date }}
 			{% endif %}
 		  {% else %}
 			{{ "N/A" }}
