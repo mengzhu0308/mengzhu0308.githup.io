@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/2024-12-01-shufflenemt
 excerpt: 'This paper is about lightweight convolutional neural networks.'
-date: 2021-03-14
+date: 2024-12-01
 venue: 'Pattern Analysis and Applications'
 slidesurl: ''
 paperurl: 'https://mengzhu0308.github.io/mengzhu0308.githup.io/files/papers/2024-12-01-shufflenemt.pdf'
