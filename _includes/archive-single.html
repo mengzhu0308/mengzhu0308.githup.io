@@ -35,25 +35,57 @@
     </h2>
     
 	{% if post.read_time %}
-	  <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-	{% endif %}
-		{% assign date_parts = post.date | default: "1900-01-01" | split: '-' %}
-		{% assign date_format = "%Y" %}
-		{% if date_parts.size >= 3 %}
-		  {% assign date_format = "%B %d, %Y" %}
-		{% elsif date_parts.size == 2 %}
-		  {% assign date_format = "%B, %Y" %}
-		{% else %}
-		  {% assign date_format = "%Y" %}
-		{% endif %}
+  <p class="page__meta">
+    <i class="fa fa-clock" aria-hidden="true"></i> 
+    {% include read-time.html %}
+  </p>
+{% endif %}
 
-		{% if post.collection == 'teaching' %}
-		  <p>{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: date_format }}</p>
-		{% elsif post.collection == 'publications' %}
-		  <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: date_format }}</p>
-		{% elsif post.date %}
-		  <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: date_format }}</time></p>
-		{% endif %}
+{% assign date_parts = post.date | split: '-' %}
+{% assign date_format = "%Y" %}
+{% if post.date %}
+  {% if date_parts.size == 3 %}
+    {% assign date_format = "%B %d, %Y" %}
+  {% elsif date_parts.size == 2 %}
+    {% assign date_format = "%B, %Y" %}
+  {% endif %}
+{% endif %}
+
+{% case post.collection %}
+{% when 'teaching' %}
+  <p>
+    {{ post.type | default: "N/A" }}, 
+    <i>{{ post.venue | default: "N/A" }}</i>, 
+    {% if post.date %}
+      {{ post.date | date: date_format }}
+    {% else %}
+      N/A
+    {% endif %}
+  </p>
+{% when 'publications' %}
+  <p>
+    Published in <i>{{ post.venue | default: "N/A" }}</i>, 
+    {% if post.date %}
+      {{ post.date | date: date_format }}
+    {% else %}
+      N/A
+    {% endif %}
+  </p>
+{% else %}
+  {% if post.date %}
+    <p class="page__date">
+      <strong>
+        <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> 
+        {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}
+      </strong>
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {{ post.date | date: date_format }}
+      </time>
+    </p>
+  {% else %}
+    <p class="page__date">Date not available.</p>
+  {% endif %}
+{% endcase %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
