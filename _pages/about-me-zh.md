@@ -7,7 +7,7 @@ redirect_from:
   - /about-me-zh.html 
 ---
 
-我（**朱梦**）于2024年获得南昌大学信息管理与信息系统博士学位，博士生导师为[闵卫东](https://smcs.ncu.edu.cn/szdw/jsml/ce79f6f094154067a7dda50292b90603.htm)教授。分别于2021年和2018年获得南昌大学计算机科学与技术硕士和学士学位。当前研究兴趣包括AI基础模型、深层神经网络模型的学习动力学、适应性深度学习、生成式深度学习、AI4Science、金融大模型。担任*[EAAI](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence)*期刊审稿人。
+我（**朱梦**）于2024年获得南昌大学信息管理与信息系统博士学位，博士生导师为[闵卫东](https://smcs.ncu.edu.cn/szdw/jsml/ce79f6f094154067a7dda50292b90603.htm)教授。分别于2021年和2018年获得南昌大学计算机科学与技术硕士和学士学位。当前研究兴趣包括AI基础模型、深层神经网络模型的学习动力学、适应性深度学习、生成式深度学习、AI4Science、金融大模型。担任*[EAAI](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence)*期刊的审稿人。
 
 ## 招生
 
