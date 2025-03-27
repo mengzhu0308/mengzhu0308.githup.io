@@ -69,7 +69,7 @@ Work Experience and Education
 Publications
 ------
 
-（* denotes corresponding author, # denotes co-author.）
+（* denotes corresponding authors, # denotes co-first authors.）
 
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
