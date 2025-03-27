@@ -79,6 +79,8 @@ News
 
 ## Representative Achievements
 
+（* denotes corresponding author, # denotes co-author.）
+
 ### Basic Architectures of AI
 
 1. **Meng Zhu**, Weidong Min*, Junwei Han, Qing Han, Shimiao Cui. Improved channel attention methods via hierarchical pooling and reducing information loss. Pattern Recognition, 2024, 148: 1-9. DOI: 10.1016/j.patcog.2023.110148.

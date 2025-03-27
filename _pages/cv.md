@@ -69,6 +69,8 @@ Work Experience and Education
 Publications
 ------
 
+（* denotes corresponding author, # denotes co-author.）
+
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
