@@ -81,7 +81,7 @@ News
 
 ## Representative Achievements
 
-（* denotes corresponding authors, # denotes co-first authors.）
+（* denotes corresponding authors, <sup>#</sup> denotes co-first authors.）
 
 ### Basic Architectures of AI
 
