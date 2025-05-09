@@ -1,14 +1,20 @@
 {% include base_path %}
 
-{% if page.previous or page.next %}
+{% if page.previous or page.next or page.paperurl %}
   <nav class="pagination">
-	{% if post.paperurl %}
-      <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
     {% if page.previous %}
       <a href="{{ base_path }}{{ page.previous.url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
     {% else %}
       <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
     {% endif %}
+    
+    {# 新增下载按钮 #}
+    {% if page.paperurl %}
+      <a href="{{ page.paperurl | relative_url }}" class="pagination--pager" title="下载文档" download>
+        <i class="fas fa-download"></i>
+      </a>
+    {% endif %}
+    
     {% if page.next %}
       <a href="{{ base_path }}{{ page.next.url }}" class="pagination--pager" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
     {% else %}
