@@ -4,6 +4,25 @@
   {% if site.data.ui-text[site.locale].share_on_label %}
     <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</h4>
   {% endif %}
+  
+  <!-- 新增微博分享 -->
+  <a href="http://service.weibo.com/share/share.php?url={{ base_path | url_encode }}{{ page.url | url_encode }}&title={{ page.title | url_encode }}" 
+     class="btn btn--weibo" 
+     title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} 微博"
+     target="_blank">
+    <i class="fab fa-weibo" aria-hidden="true"></i><span> 微博</span>
+  </a>
+
+  <!-- 新增微信分享（需二维码） -->
+  <div class="btn btn--wechat" style="position: relative;">
+    <i class="fab fa-weixin" aria-hidden="true"></i><span> 微信</span>
+    <div class="wechat-qr" style="display: none; position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); background: white; padding: 10px; border: 1px solid #ddd; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+      <img src="{{ '/assets/images/wechat-qr.png' | relative_url }}" 
+           alt="微信分享二维码" 
+           style="width: 120px; height: 120px;">
+      <p style="margin: 5px 0 0; font-size: 12px; color: #666;">扫描二维码分享</p>
+    </div>
+  </div>
 
   <a href="https://bsky.app/intent/compose?text={{ base_path }}{{ page.url }}" class="btn btn--bluesky" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Bluesky"><i class="fab fa-bluesky" aria-hidden="true"></i><span> Bluesky</span></a>
 
