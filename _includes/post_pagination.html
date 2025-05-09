@@ -8,7 +8,7 @@
       <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
     {% endif %}
     
-    {# 新增下载按钮 #}
+	<!-- 新增下载按钮 -->
     {% if page.paperurl %}
       <a href="{{ page.paperurl | relative_url }}" class="pagination--pager" title="下载文档" download>
         <i class="fas fa-download"></i>
