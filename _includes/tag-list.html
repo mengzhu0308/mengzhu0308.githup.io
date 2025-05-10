@@ -3,8 +3,8 @@
 <!-- 新增下载链接部分 -->
 
 {% if page.paperurl %}
-  <div class="download-notice" style="margin: 2rem 0; text-align: center;">
-    <a href="{{ page.paperurl | relative_url }}" class="pagination--pager" title="下载文档" download>
+  <div class="download-notice">
+    <a href="{{ page.paperurl | relative_url }}" class="btn btn--primary" title="下载文档" download>
       <i class="fas fa-download"></i>
     </a>
   </div>
