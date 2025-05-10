@@ -1,10 +1,13 @@
 {% include base_path %}
 
 <!-- 新增下载链接部分 -->
+
 {% if page.paperurl %}
-  <a href="{{ page.paperurl | relative_url }}" class="pagination--pager" title="下载文档" download>
-    <i class="fas fa-download"></i>
-  </a>
+  <div class="download-notice" style="margin: 2rem 0; text-align: center;">
+    <a href="{{ page.paperurl | relative_url }}" class="pagination--pager" title="下载文档" download>
+      <i class="fas fa-download"></i>
+    </a>
+  </div>
 {% endif %}
 
 {% case site.tag_archive.type %}
