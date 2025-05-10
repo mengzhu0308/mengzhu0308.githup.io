@@ -1,10 +1,13 @@
 {% include base_path %}
 
-<!-- 新增下载链接部分 -->
+<!-- 新增查看完整文档 -->
 {% if page.paperurl %}
 <div class="download-notice">
-  <a href="{{ page.paperurl | relative_url }}" class="btn btn--primary" download>
-    <i class="fas fa-file-pdf"></i> Download Blog Post
+  <a href="{{ page.paperurl | relative_url }}" 
+     class="btn btn--primary" 
+     target="_blank" 
+     rel="noopener">
+    <i class="fas fa-file-pdf"></i> 查看完整文档
   </a>
 </div>
 {% endif %}
