@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-**I** earned the Ph.D. degree in information management and information systems from [Nanchang University](https://www.ncu.edu.cn/), China in 2024, apprenticing under Prof. [Weidong Min](https://smcs.ncu.edu.cn/szdw/jsml/ce79f6f094154067a7dda50292b90603.htm). I earned the M.E. and B.E. degrees in computer science and technology from Nanchang University, China in 2021 and 2018, respectively. My current research interests are basic architectures of AI, learning dynamics of deep neural network models, generative deep learning, intelligent computing, intelligent management and video intelligence. I am a Reviewer of *[EAAI](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence)*.
+**I** am currently a Lecturer of School of Information Management and Mathematics, [Jiangxi University of Finance and Economics](https://www.jxufe.edu.cn), China. I earned the Ph.D. degree in information management and information systems from [Nanchang University](https://www.ncu.edu.cn), China in 2024, apprenticing under Prof. [Weidong Min](https://smcs.ncu.edu.cn/szdw/jsml/ce79f6f094154067a7dda50292b90603.htm). I earned the M.E. and B.E. degrees in computer science and technology from Nanchang University, China in 2021 and 2018, respectively. My current research interests are basic architectures of AI, learning dynamics of deep neural network models, generative deep learning, intelligent computing, intelligent management and video intelligence. I am a Reviewer of *[EAAI](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence)*.
 
 News
 ------
@@ -39,9 +39,9 @@ News
     <tbody>
       <tr>
         <td>2025-Present</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td><a href="https://www.jxufe.edu.cn" target="_blank" rel="noopener">Jiangxi University of Finance and Economics</a></td>
+        <td>School of Information Management and Mathematics</td>
+        <td>Lecturer</td>
       </tr>
     </tbody>
   </table>
@@ -78,6 +78,7 @@ News
     </tbody>
   </table>
 </div>
+
 
 ## Representative Achievements
 
