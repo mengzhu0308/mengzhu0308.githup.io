@@ -12,7 +12,7 @@ redirect_from:
 Work Experience and Education
 ------
 
-<div class="table-wrapper-cv-work-experience">
+<div class="table-wrapper-about-work-experience">
   <table>
     <thead>
       <tr>
@@ -25,9 +25,9 @@ Work Experience and Education
     <tbody>
       <tr>
         <td>2025-Present</td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td><a href="https://www.jxufe.edu.cn" target="_blank" rel="noopener">Jiangxi University of Finance and Economics</a></td>
+        <td>School of Information Management and Mathematics</td>
+        <td>Lecturer</td>
       </tr>
     </tbody>
   </table>
