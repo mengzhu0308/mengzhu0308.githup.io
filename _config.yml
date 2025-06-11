@@ -24,8 +24,8 @@ author:
   # Biographic information
   avatar           : "profile.jpg"
   name             : "Meng Zhu"
-  pronouns         : "he/his"  
-  bio              : "A Lecturer of Jiangxi University of Finance and Economics"
+  gender           : "Male"  
+  bio              : "A Lecturer of JXUFE"
   location         : "China"
   employer         : "JXUFE"
   uri              : # URL
