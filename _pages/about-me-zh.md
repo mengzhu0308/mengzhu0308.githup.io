@@ -34,7 +34,7 @@ redirect_from:
     </thead>
     <tbody>
       <tr>
-        <td>2025至今</td>
+        <td>2025-06至今</td>
         <td><a href="https://www.jxufe.edu.cn" target="_blank" rel="noopener">江西财经大学</a></td>
         <td>信息管理与数学学院</td>
         <td>讲师</td>
