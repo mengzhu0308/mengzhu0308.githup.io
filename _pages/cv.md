@@ -37,8 +37,9 @@ Work Experience and Education
     <thead>
       <tr>
         <th>Period</th>
-        <th>University</th>
+        <th>Graduated University</th>
         <th>Major</th>
+        <th>Mentored by</th>
         <th>Degree</th>
       </tr>
     </thead>
@@ -47,24 +48,26 @@ Work Experience and Education
         <td>2021.09-2024.12</td>
         <td><a href="https://www.ncu.edu.cn" target="_blank" rel="noopener">Nanchang University</a></td>
         <td>Information Management and Information Systems</td>
+        <td><a href="https://smcs.ncu.edu.cn/szdw/jsml/2e0cf032bb4c475c8f0767ecd4800043.htm" target="_blank" rel="noopener">Prof. Weidong Min</a></td>
         <td>Ph.D.</td>
       </tr>
       <tr>
         <td>2018.09-2021.06</td>
         <td>Nanchang University</td>
         <td>Computer Science and Technology</td>
+        <td>Prof. Weidong Min</td>
         <td>M.E.</td>
       </tr>
       <tr>
         <td>2014.09-2018.06</td>
         <td>Nanchang University</td>
         <td>Computer Science and Technology</td>
+        <td>N/A</td>
         <td>B.E.</td>
       </tr>
     </tbody>
   </table>
 </div>
-
 
 
 Publications
