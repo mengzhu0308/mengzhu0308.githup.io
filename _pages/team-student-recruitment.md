@@ -1,5 +1,5 @@
 ---
-permalink: /laboratory-student-recruitment/
+permalink: /team-student-recruitment/
 title: "实验室与招生"
 author_profile: true
 ---
