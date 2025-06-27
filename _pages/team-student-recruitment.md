@@ -1,6 +1,6 @@
 ---
 permalink: /team-student-recruitment/
-title: "实验室与招生"
+title: "课题组与招生"
 author_profile: true
 ---
 
