@@ -3,7 +3,7 @@ permalink: /about-me-zh/
 title: "关于我"
 author_profile: true
 redirect_from: 
-  - /md/
+  - /about-me-zh/
   - /about-me-zh.html 
 ---
 
@@ -76,4 +76,3 @@ redirect_from:
     </tbody>
   </table>
 </div>
-

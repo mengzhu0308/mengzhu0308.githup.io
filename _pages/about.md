@@ -1,7 +1,5 @@
 ---
 permalink: /
-layout: single              # 使用单栏布局
-classes: wide               # 启用宽屏模式
 title: "Academic Pages of Meng Zhu"
 author_profile: true
 redirect_from: 
