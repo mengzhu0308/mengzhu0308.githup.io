@@ -63,22 +63,22 @@
 		{% assign links = "" | split: "" %}
     
 		{% if post.paperurl %}
-			{% capture link %}<a href="{{ post.paperurl }}">Download Paper</a>{% endcapture %}
+			{% capture link %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener">Download Paper</a>{% endcapture %}
 			{% assign links = links | push: link %}
 		{% endif %}
     
 		{% if post.slidesurl %}
-			{% capture link %}<a href="{{ post.slidesurl }}">Download Slides</a>{% endcapture %}
+			{% capture link %}<a href="{{ post.slidesurl }}" target="_blank" rel="noopener">Download Slides</a>{% endcapture %}
 			{% assign links = links | push: link %}
 		{% endif %}
     
 		{% if post.arXiv %}
-			{% capture link %}<a href="{{ post.arXiv }}">arXiv</a>{% endcapture %}
+			{% capture link %}<a href="{{ post.arXiv }}" target="_blank" rel="noopener">arXiv</a>{% endcapture %}
 			{% assign links = links | push: link %}
 		{% endif %}
     
 		{% if post.GitHub %}
-			{% capture link %}<a href="{{ post.GitHub }}">GitHub</a>{% endcapture %}
+			{% capture link %}<a href="{{ post.GitHub }}" target="_blank" rel="noopener">GitHub</a>{% endcapture %}
 			{% assign links = links | push: link %}
 		{% endif %}
     
