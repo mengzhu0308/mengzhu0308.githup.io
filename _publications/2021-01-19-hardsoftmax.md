@@ -7,6 +7,8 @@ excerpt: 'This paper is about branch attention.'
 date: 2021-01-19
 venue: '计算机工程与应用'
 slidesurl: ''
+arXiv: ''
+GitHub: 'https://github.com/mengzhu0308/PSK-Attention'
 paperurl: 'https://mengzhu0308.github.io/mengzhu0308.githup.io/files/papers/2021-01-19-hardsoftmax.pdf'
 citation: 'Meng Zhu, Weidong Min*, Qi Wang, et al. PFLU and FPFLU: Two novel non-monotonic activation functions in convolutional neural networks. Neurocomputing, 2021, 429: 110-117. DOI: 10.1016/j.neucom.2020.11.068 
 ---
