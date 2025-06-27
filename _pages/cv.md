@@ -91,14 +91,3 @@ Teaching
   {% endfor %}</ul>
 Service and Leadership
 ------
-
-
-
-```
-<!-- PDF导出按钮 -->
-  <div class="text-center" style="margin-top: 40px;">
-    <button onclick="window.print()" class="btn btn--primary">
-      <i class="fas fa-download"></i> Export as PDF
-    </button>
-  </div>
-```
