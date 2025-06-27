@@ -11,8 +11,8 @@ main:
   - title: "中文简介"
     url: /about-me-zh/
     
-  - title: "实验室与招生"
-    url: /laboratory-student-recruitment/
+  - title: "课题组与招生"
+    url: /team-student-recruitment/
     
   - title: "Publications"
     url: /publications/
