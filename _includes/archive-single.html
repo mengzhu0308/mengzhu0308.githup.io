@@ -56,7 +56,7 @@
 	  <p>
 		{% if post.citation %}
 			Recommended citation: {{ post.citation }}
-			{% if post.paperurl or post.slidesurl or post.arXiv or post.GitHub %}<br>{% endif %}
+			{% if post.paperurl or post.slidesurl or post.arXivurl or post.GitHuburl %}<br>{% endif %}
 		{% endif %}
     
 		{% comment %} 动态构建链接列表 {% endcomment %}
@@ -72,13 +72,13 @@
 			{% assign links = links | push: link %}
 		{% endif %}
     
-		{% if post.arXiv %}
-			{% capture link %}<a href="{{ post.arXiv }}" target="_blank" rel="noopener">arXiv</a>{% endcapture %}
+		{% if post.arXivurl %}
+			{% capture link %}<a href="{{ post.arXivurl }}" target="_blank" rel="noopener">arXiv</a>{% endcapture %}
 			{% assign links = links | push: link %}
 		{% endif %}
     
-		{% if post.GitHub %}
-			{% capture link %}<a href="{{ post.GitHub }}" target="_blank" rel="noopener">GitHub</a>{% endcapture %}
+		{% if post.GitHuburl %}
+			{% capture link %}<a href="{{ post.GitHuburl }}" target="_blank" rel="noopener">GitHub</a>{% endcapture %}
 			{% assign links = links | push: link %}
 		{% endif %}
     
