@@ -32,7 +32,7 @@ redirect_from:
     </thead>
     <tbody>
       <tr>
-        <td>2025.07-Present</td>
+        <td>2025.06-Present</td>
         <td><a href="https://www.jxufe.edu.cn" target="_blank" rel="noopener">Jiangxi University of Finance and Economics</a></td>
         <td>School of Information Management and Mathematics</td>
         <td>Lecturer</td>
@@ -76,4 +76,5 @@ redirect_from:
     </tbody>
   </table>
 </div>
+
 ## News
