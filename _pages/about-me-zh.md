@@ -73,3 +73,6 @@ author_profile: true
     </tbody>
   </table>
 </div>
+## 荣誉证书
+
+2025年南昌大学优秀博士学位论文

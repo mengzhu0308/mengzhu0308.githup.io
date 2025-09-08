@@ -76,5 +76,8 @@ redirect_from:
     </tbody>
   </table>
 </div>
+## Certificate of Honor
+
+Outstanding Doctoral Dissertation of Nanchang University in 2025
 
 ## News
