@@ -4,7 +4,7 @@ collection: teaching
 type: "博士课程"
 permalink: /teaching/2026-spring-teaching-2
 venue: "江西财经大学"
-date: 2026-00-00
+date: 2026-01-01
 location: "南昌"
 ---
 
