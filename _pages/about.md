@@ -80,4 +80,6 @@ redirect_from:
 
 Outstanding Doctoral Dissertation of Nanchang University in 2025
 
+Outstanding Trainees of the 2025 Concentrated Training for New Employees at Jiangxi University of Finance and Economics
+
 ## News
